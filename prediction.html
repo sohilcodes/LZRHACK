@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background: yellow; }
+        .box { width: 300px; padding: 20px; background: white; margin: 100px auto; border-radius: 10px; }
+        input, button { width: 100%; padding: 10px; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <img src="" width="100">
+    <div class="box">
+        <h3>Enter Last 3 Digits</h3>
+        <input type="text" id="number" placeholder="Enter last 3 digits" maxlength="3"><br>
+        <button onclick="predict()">Prediction</button>
+        <p id="result"></p>
+    </div>
+    <a href="https://btwwin.me/#/register?invitationCode=65832330505"><button>Register Link</button></a>
+    <a href="https://t.me/+IN9oJJk-ildhNzg1"><button>Join Now</button></a>
+
+    <script>
+        function predict() {
+            let outcomes = ["Big Red", "Small Red", "Big Green", "Small Green"];
+            let randomOutcome = outcomes[Math.floor(Math.random() * outcomes.length)];
+            document.getElementById("result").innerText = "Result: " + randomOutcome;
+        }
+    </script>
+</body>
+</html>
