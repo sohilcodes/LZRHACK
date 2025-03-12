@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Key</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .box { width: 300px; padding: 20px; background: white; margin: 100px auto; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Generate Login Key</h2>
+        <form action="generate_key.php" method="POST">
+            <input type="email" name="email" placeholder="Enter Email" required><br>
+            <select name="duration">
+                <option value="1">1 Day</option>
+                <option value="3">3 Days</option>
+                <option value="7">1 Week</option>
+                <option value="30">1 Month</option>
+            </select><br>
+            <button type="submit">Generate Key</button>
+        </form>
+    </div>
+</body>
+</html>
