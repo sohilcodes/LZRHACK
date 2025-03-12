@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .admin-box { width: 300px; padding: 20px; margin: 50px auto; background: white; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <div class="admin-box">
+        <h2>Create User</h2>
+        <form action="create_user.php" method="POST">
+            <input type="email" name="email" placeholder="Enter Email" required><br>
+            <input type="password" name="password" placeholder="Enter Password" required><br>
+            <select name="duration">
+                <option value="1">1 Day</option>
+                <option value="3">3 Days</option>
+                <option value="7">1 Week</option>
+                <option value="30">1 Month</option>
+            </select><br>
+            <button type="submit">Create User</button>
+        </form>
+    </div>
+</body>
+</html>
